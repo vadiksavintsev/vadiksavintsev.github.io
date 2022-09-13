@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Задание 1 - Савинцев Вадим</title>
+    </head>
+    <body>
+        <h1>Ссылки</h1>
+        <ol>
+            <li><a href="http://example.com"> Абсолютная гиперссылка на главную страницу сайта example.com</a></li>
+            <li><a href="https://example.com"> Абсолютная на главную страницу сайта example.com в протоколе https</a></li>
+            <li><a href="ftp://ftp.server.com/file.exe">Ссылка на файл на сервере FTP без авторизации</a></li>
+            <li><a href="ftp://user001:secretpassword@ftp.server.com/file.exe">Ссылка на файл на сервере FTP c авторизацией</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/Аниме#История">Ссылка на фрагмент страницы некоторого сайта</a></li>
+            <li><a href="#Форма">Ссылка на фрагмент текущей страницы</a></li>
+            <li><a href="https://www.mvideo.ru?page=1&perpage=30">Ссылка с двумя параметрами в URL</a></li>
+            <li><a href="">Список ссылок основной навигации сайта с подписями title</a></li>
+            <li><a >Ссылка без href</a></li>
+            <li><a href="##">Ссылка с пустым href</a></li>
+            <li><a href="http://example.com" rel="noindex">Ссылка, по которой запрещен переход поисковикам</a></li>
+            <li><a href="http://example.com" rel="nofollow">Запрещенная для индексации поисковиками</a></li>
+            <li><a href="##">Контекстная в тексте абзаца</a></li>
+            <li><a href="index.html"><img src="image.jpg"></a></li>
+            <li><a href="index.html"><img src="nakl_prozr_dveri_3-700x800.png" usemap="#Navigation"></a></li>
+            <map name="Navigation">
+                <area shape="rect" coords="2,260,284,538" href="#1-rect" alt="ссылка 1">
+                <area shape="circle" coords="557,401,143" href="#2-circle" alt="ссылка 2">
+            </map>
+            <li><a href="index.html">Относительная на страницу в текущем каталоге</a></li>
+            <li><a href="about/index.html">Относительная на страницу в каталоге about</a></li>
+            <li><a href="../index.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+            <li><a href="../../index.html">Относительная на страницу в каталоге двумя уровнями выше</a></li>
+            <li><a href="##">Сокращенная на главную</a></li>
+            <li><a href="##">Сокращенная ссылку на внутреннюю</a></li>
+        </ol>
+        <h1> <a name="Форма"></a> Форма</h1>
+        <form action="/" method="post">
+            <label>
+                Ваше имя:<br/>
+                <input name="field-name-1"
+                placeholder="Введите ваше имя" />
+            </label> <br/>
+            <label>
+                Ваш email: <br/>
+                <input name="field-email"
+                type="email"
+                placeholder="Введите вашу почту" />
+            </label> <br/>
+            <label>
+                Дата рождения: <br/>
+                <input name="field-date"
+                value="2022-09-11"
+                type="date"/>
+            </label> <br/>
+            Пол: <br/>
+            <label>
+                <input type="radio" checked="checked"
+                name="radio-group-1" value="Значение 1" />
+                Мужской
+            </label>
+            <label>
+                <input type="radio"
+                name="radio-group-1" value="Значение 2" />
+                Женский
+            </label><br/>
+            Количество конечностей: <br/>
+            <label>
+                <input type="radio" checked="checked"
+                name="radio-group-2" value="Значение 1" />
+                1
+            </label>
+            <label>
+                <input type="radio"
+                name="radio-group-2" value="Значение 2" />
+                2
+            </label>
+            <label>
+                <input type="radio"
+                name="radio-group-2" value="Значение 3" />
+                3
+            </label>
+            <label>
+                <input type="radio"
+                name="radio-group-2" value="Значение 4" />
+                4
+            </label><br/>
+            <label>
+                Сверхспособности:
+                <br/>
+                <select name="field-name-4[]"
+                multiple="multiple">
+                <option value="Значение 1">Бессмертие</option>
+                <option value="Значение 2" selected="selected">Прохождение сквозь стены</option>
+                <option value="Значение 3" selected="selected">Левитация</option>
+            </select>
+            </label><br/>
+            <label>
+                Биография:<br/>
+                <textarea name="field-name-2" placeholder="Введите биографию"></textarea> 
+            </label><br/>
+            <label>
+                С контрактом ознакомлен (а)
+                <input type="checkbox" checked="checked"
+                name="check-1"/>
+            </label><br/>
+            <input type="submit" value="Отправить" />
+        </form>
+    </body>
+</html>
